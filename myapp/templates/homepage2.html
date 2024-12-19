@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom right, #ff7eb3, #ff758c);
+            color: #ffffff;
+        }
+        .container {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        a {
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            color: #ffffff;
+            background: #ff3366;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        a:hover {
+            background: #cc2850;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>This is the Next Page!</h1>
+        <a href="{% url 'home' %}">Back to Home</a>
+    </div>
+</body>
+</html>
